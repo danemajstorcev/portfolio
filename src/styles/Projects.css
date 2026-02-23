@@ -1,0 +1,133 @@
+.projects-section {
+  border-top: 1px solid var(--border);
+}
+
+.projects-note {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-bottom: 2.5rem;
+  padding: 0.7rem 1rem;
+  background: rgba(255,107,53,0.05);
+  border: 1px solid rgba(255,107,53,0.15);
+  border-radius: var(--radius);
+}
+.projects-note a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--green));
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.project-card:hover {
+  border-color: var(--border-h);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+}
+
+.project-card:hover::before { opacity: 1; }
+
+.project-card--featured {
+  border-color: rgba(0,229,255,0.2);
+}
+.project-card--featured::before { opacity: 0.5; }
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-num {
+  font-size: 0.68rem;
+  color: var(--cyan);
+  letter-spacing: 0.15em;
+  font-family: var(--font-mono);
+}
+
+.project-icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.project-icon-link {
+  color: var(--text-dim);
+  transition: color var(--transition);
+  display: flex;
+  align-items: center;
+}
+.project-icon-link:hover { color: var(--cyan); }
+
+.project-folder {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.project-title {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  transition: color var(--transition);
+}
+.project-card:hover .project-title { color: var(--cyan); }
+
+.project-desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.project-tag {
+  font-size: 0.65rem;
+  padding: 0.2rem 0.65rem;
+  background: var(--cyan-dim);
+  color: var(--cyan);
+  border-radius: 100px;
+  letter-spacing: 0.05em;
+}
+
+.projects-cta {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}

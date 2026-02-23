@@ -1,0 +1,165 @@
+.about-section {
+  border-top: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.about-bio p {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.95;
+}
+
+.about-bio strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--cyan);
+  font-style: italic;
+}
+
+.about-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.about-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.about-link:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+
+.about-link-icon {
+  color: var(--cyan);
+}
+
+/* Card column */
+.about-card-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Avatar */
+.about-avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-placeholder {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background: var(--bg-card);
+  border: 2px solid var(--border-h);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--cyan);
+  text-shadow: 0 0 20px rgba(0,229,255,0.5);
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,229,255,0.15);
+  animation: spin 12s linear infinite;
+}
+.avatar-ring::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cyan);
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px var(--cyan);
+}
+.avatar-ring--2 {
+  inset: -22px;
+  border-color: rgba(13,255,140,0.1);
+  animation: spin 20s linear infinite reverse;
+}
+.avatar-ring--2::after {
+  background: var(--green);
+  box-shadow: 0 0 10px var(--green);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Facts */
+.about-facts {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-fact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.2rem;
+  font-size: 0.78rem;
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+}
+.about-fact:last-child { border-bottom: none; }
+.about-fact:hover { background: var(--cyan-dim); }
+
+.fact-label {
+  color: var(--text-dim);
+  min-width: 80px;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+}
+
+.fact-sep {
+  color: var(--border-h);
+}
+
+.fact-value {
+  color: var(--text);
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
