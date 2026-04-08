@@ -3,11 +3,11 @@ import '../styles/Projects.css'
 const projects = [
   {
     num: '01',
-    title: 'Project Alpha',
-    desc: 'A responsive web application built with React.js and Next.js featuring dynamic routing, API integration, and a clean modern UI.',
-    tags: ['React', 'Next.js', 'SASS', 'TypeScript'],
-    github: 'https://github.com/danemajstorcev',
-    live: '#',
+    title: 'Decision Simulator',
+    desc: 'Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/danemajstorcev/decision-simulator',
+    live: 'https://decision-simulator-nine.vercel.app/',
     featured: true,
   },
   {
