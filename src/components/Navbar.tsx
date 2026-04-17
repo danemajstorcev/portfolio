@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/Navbar.css";
 
+
 const links = ["About", "Skills", "Projects"];
 
 interface NavbarProps {

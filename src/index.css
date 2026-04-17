@@ -110,7 +110,6 @@ a {
   border-radius: 4px;
 }
 
-/* Shared section styles */
 .section {
   padding: 7rem 5%;
   max-width: 1200px;
@@ -142,7 +141,6 @@ a {
   margin-bottom: 3rem;
 }
 
-/* Fade-in animation class */
 @keyframes fadeUp {
   from {
     opacity: 0;

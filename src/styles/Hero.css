@@ -10,7 +10,6 @@
   position: relative;
 }
 
-/* Corner decorations */
 .hero-corner {
   position: absolute;
   width: 80px;
@@ -32,7 +31,6 @@
   opacity: 0.25;
 }
 
-/* Content */
 .hero-content {
   min-width: 0;
   overflow: hidden;
@@ -144,7 +142,6 @@
   transform: translateY(-2px);
 }
 
-/* Visual side */
 .hero-visual {
   min-width: 0;
   display: flex;
@@ -152,7 +149,6 @@
   gap: 1.2rem;
 }
 
-/* Code block */
 .hero-code-block {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -198,7 +194,6 @@ code { font-family: var(--font-mono); }
 .str  { color: var(--green); }
 .bool { color: var(--orange); }
 
-/* Stats */
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -237,7 +232,6 @@ code { font-family: var(--font-mono); }
   text-align: center;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
