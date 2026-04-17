@@ -36,7 +36,6 @@ export default function Hero() {
 
   return (
     <section className="hero" id="hero">
-      {/* Decorative grid-corner */}
       <div className="hero-corner hero-corner--tl" />
       <div className="hero-corner hero-corner--br" />
 
@@ -136,7 +135,7 @@ export default function Hero() {
             <span className="stat-label">Technologies</span>
           </div>
           <div className="stat-card">
-            <span className="stat-num">4+</span>
+            <span className="stat-num">9+</span>
             <span className="stat-label">Projects</span>
           </div>
         </div>

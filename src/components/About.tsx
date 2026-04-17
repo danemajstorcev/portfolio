@@ -16,7 +16,6 @@ export default function About() {
   return (
     <section className="section about-section" id="about">
       <div className="about-grid">
-        {/* Text side */}
         <div className="about-text">
           <p className="section-label">01. about</p>
           <h2 className="section-title">Who I Am</h2>
@@ -24,7 +23,7 @@ export default function About() {
 
           <div className="about-bio">
             <p>
-              Hey! I'm <strong>Dane Majstorchev</strong>, a junior Front-End
+              Hey! I'm <strong>Dane Majstorchev</strong>, a Front-End
               Developer with a passion for crafting smooth, performant web
               experiences that users actually enjoy.
             </p>
@@ -64,7 +63,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Facts / card side */}
         <div className="about-card-col">
           <div className="about-avatar">
             <div className="avatar-placeholder">

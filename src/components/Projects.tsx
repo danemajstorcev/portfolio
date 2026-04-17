@@ -1,3 +1,11 @@
+import decisionImg from "../img/decisionSimulator.png";
+import lifeTrackerImg from "../img/liveFreightTracker.png"
+import portfolioImg from "../img/portfolioAnalyzer.png"
+import freelancerFlowImg from "../img/freelanceFlow.png"
+import dispatchJobsImg from "../img/dispatchJobs.png"
+import CinemalixImg from "../img/cinemalix.png"
+import corevantaLogisticsImg from "../img/corevantaLogo.png"
+import smartPhoneStoreImg from "../img/smartphoneStore.png"
 import "../styles/Projects.css";
 
 interface Project {
@@ -20,41 +28,82 @@ const projects: Project[] = [
     github: "https://github.com/danemajstorcev/decision-simulator",
     live: "https://decision-simulator-nine.vercel.app/",
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop",
+    image: decisionImg,
   },
   {
     num: "02",
-    title: "Project Beta",
-    desc: "A fully responsive front-end project with custom animations, SASS architecture, and Bootstrap grid layout.",
-    tags: ["HTML", "CSS", "Bootstrap", "SASS"],
-    github: "https://github.com/danemajstorcev",
-    live: "#",
-    featured: false,
-    image:
-      "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=600&h=400&fit=crop",
+    title: "Freight Pulse Tracker",
+    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/danemajstorcev/live-freight-live-checker",
+    live: "https://live-freight-live-checker.vercel.app/",
+    featured: true,
+    image: lifeTrackerImg,
   },
   {
     num: "03",
-    title: "Project Gamma",
-    desc: "Interactive JavaScript application with jQuery & AJAX for real-time data fetching and dynamic DOM manipulation.",
-    tags: ["JavaScript", "jQuery", "AJAX", "CSS"],
-    github: "https://github.com/danemajstorcev",
-    live: "#",
-    featured: false,
-    image:
-      "https://images.unsplash.com/photo-1633356122544-f134ef2944f7?w=600&h=400&fit=crop",
+    title: "Portfolio Analyzer",
+    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/danemajstorcev/portfolio-analyzer",
+    live: "https://portfolio-analyzer-pink.vercel.app/",
+    featured: true,
+    image: portfolioImg,
   },
   {
     num: "04",
-    title: "Project Delta",
-    desc: "A TypeScript-based component library with UX/UI best practices and reusable, accessible React components.",
-    tags: ["TypeScript", "React", "UX/UI", "CSS Modules"],
-    github: "https://github.com/danemajstorcev",
-    live: "#",
+    title: "Freelance Flow Manager",
+    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/danemajstorcev/freelancer-workflow",
+    live: "https://freelancer-workflow.vercel.app/",
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1633356122544-f134ef2944f7?w=600&h=400&fit=crop",
+    image: freelancerFlowImg,
+  },  {
+    num: "05",
+    title: "Dispatch Jobs",
+    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/danemajstorcev/dispatch-jobs",
+    live: "https://dispatch-jobs.vercel.app/",
+    featured: true,
+    image: dispatchJobsImg,
+  },  {
+    num: "06",
+    title: "Cinemalix",
+    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/danemajstorcev/cinemalix",
+    live: "https://cinemalix.vercel.app/auth/login",
+    featured: true,
+    image: CinemalixImg,
+  },  {
+    num: "07",
+    title: "Corevanta Logistics",
+    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/danemajstorcev/corevantalogistics",
+    live: "https://www.corevantalogistics.com/",
+    featured: true,
+    image: corevantaLogisticsImg,
+  },  {
+    num: "08",
+    title: "Smartphone Store",
+    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/danemajstorcev/smartphone-shop",
+    live: "https://smartphone-shop-phi.vercel.app/",
+    featured: true,
+    image: smartPhoneStoreImg,
+  },  {
+    num: "09",
+    title: "Decision Simulator",
+    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/danemajstorcev/decision-simulator",
+    live: "https://decision-simulator-nine.vercel.app/",
+    featured: true,
+    image: decisionImg,
   },
 ];
 
@@ -65,7 +114,7 @@ export default function Projects() {
       <h2 className="section-title">Things I've Built</h2>
       <div className="section-divider" />
 
-      <p className="projects-note">
+      {/* <p className="projects-note">
         ⟡ Replace placeholder data with your real repos — check GitHub username{" "}
         <a
           href="https://github.com/danemajstorcev"
@@ -74,7 +123,7 @@ export default function Projects() {
         >
           @danemajstorcev
         </a>
-      </p>
+      </p> */}
 
       <div className="projects-grid">
         {projects.map((p) => (

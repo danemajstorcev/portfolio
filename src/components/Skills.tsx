@@ -81,7 +81,6 @@ export default function Skills() {
         ))}
       </div>
 
-      {/* Tag cloud for extra flair */}
       <div className="skills-tags">
         {Object.keys(levelMap).map((s) => (
           <span className="skill-tag" key={s}>
