@@ -1,11 +1,11 @@
 import decisionImg from "../img/decisionSimulator.png";
-import lifeTrackerImg from "../img/liveFreightTracker.png"
-import portfolioImg from "../img/portfolioAnalyzer.png"
-import freelancerFlowImg from "../img/freelanceFlow.png"
-import dispatchJobsImg from "../img/dispatchJobs.png"
-import CinemalixImg from "../img/cinemalix.png"
-import corevantaLogisticsImg from "../img/corevantaLogo.png"
-import smartPhoneStoreImg from "../img/smartphoneStore.png"
+import lifeTrackerImg from "../img/liveFreightTracker.png";
+import portfolioImg from "../img/portfolioAnalyzer.png";
+import freelancerFlowImg from "../img/freelanceFlow.png";
+import dispatchJobsImg from "../img/dispatchJobs.png";
+import CinemalixImg from "../img/cinemalix.png";
+import corevantaLogisticsImg from "../img/corevantaLogo.png";
+import smartPhoneStoreImg from "../img/smartphoneStore.png";
 import "../styles/Projects.css";
 
 interface Project {
@@ -23,8 +23,8 @@ const projects: Project[] = [
   {
     num: "01",
     title: "Decision Simulator",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    desc: "Decision Simulator is a lightweight web application that helps users make decisions through interactive simulation logic. It demonstrates frontend logic handling and UI interaction without frameworks.",
+    tags: ["HTML", "CSS", "JavaScript", "Web Audio API"],
     github: "https://github.com/danemajstorcev/decision-simulator",
     live: "https://decision-simulator-nine.vercel.app/",
     featured: true,
@@ -33,7 +33,7 @@ const projects: Project[] = [
   {
     num: "02",
     title: "Freight Pulse Tracker",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
+    desc: "Freight Pulse Tracker is a frontend web application that simulates real-time freight tracking and status updates for logistics operations. The project focuses on UI updates, state simulation, and logistics-style dashboard layout using vanilla JavaScript.",
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/danemajstorcev/live-freight-live-checker",
     live: "https://live-freight-live-checker.vercel.app/",
@@ -43,8 +43,8 @@ const projects: Project[] = [
   {
     num: "03",
     title: "Portfolio Analyzer",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    desc: "A data visualization tool that analyzes and displays portfolio-related metrics in a clear and interactive way.",
+    tags: ["React", "TypeScript", "CSS", "Charting Libraries"],
     github: "https://github.com/danemajstorcev/portfolio-analyzer",
     live: "https://portfolio-analyzer-pink.vercel.app/",
     featured: true,
@@ -52,58 +52,53 @@ const projects: Project[] = [
   },
   {
     num: "04",
-    title: "Freelance Flow Manager",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    title: "Freelancer Workflow",
+    desc: "Freelancer Workflow is a productivity web application designed to help freelancers manage tasks, clients, and daily workflows in a structured and organized way. The project focuses on clean UI design and efficient state management.",
+    tags: ["React", "TypeScript", "Styled Components"],
     github: "https://github.com/danemajstorcev/freelancer-workflow",
     live: "https://freelancer-workflow.vercel.app/",
     featured: true,
     image: freelancerFlowImg,
-  },  {
+  },
+  {
     num: "05",
     title: "Dispatch Jobs",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    desc: "Dispatch Jobs is a job listing platform focused on the trucking and dispatch industry. It simulates a real-world logistics job board, allowing users to browse and filter job opportunities in a structured and responsive interface.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/danemajstorcev/dispatch-jobs",
     live: "https://dispatch-jobs.vercel.app/",
     featured: true,
     image: dispatchJobsImg,
-  },  {
+  },
+  {
     num: "06",
     title: "Cinemalix",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    desc: "A Netflix-inspired movie streaming application. It features a responsive design, dynamic movie listings, and a user-friendly interface for browsing and discovering films.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "TMDb API"],
     github: "https://github.com/danemajstorcev/cinemalix",
     live: "https://cinemalix.vercel.app/auth/login",
     featured: true,
     image: CinemalixImg,
-  },  {
+  },
+  {
     num: "07",
     title: "Corevanta Logistics",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    desc: "A professional portfolio site for a remote truck dispatcher. It features a clean, modern design with sections for services, testimonials, and contact information. The site is fully responsive and optimized for performance.",
+    tags: ["React", "TypeScript", "CSS"],
     github: "https://github.com/danemajstorcev/corevantalogistics",
     live: "https://www.corevantalogistics.com/",
     featured: true,
     image: corevantaLogisticsImg,
-  },  {
+  },
+  {
     num: "08",
     title: "Smartphone Store",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    desc: "A modern e-commerce frontend for browsing and displaying smartphones with a clean UI and product-focused layout.",
+    tags: ["React", "TypeScript", "Vite", "CSS modules"],
     github: "https://github.com/danemajstorcev/smartphone-shop",
     live: "https://smartphone-shop-phi.vercel.app/",
     featured: true,
     image: smartPhoneStoreImg,
-  },  {
-    num: "09",
-    title: "Decision Simulator",
-    desc: "Pure HTML/CSS/JS - zero dependencies, zero libraries. Web Audio API for the sound effects (a crisp click on choices, a 3-note chord progression on endings that changes based on outcome type) and DOM manipulation with a custom typewriter engine and full scene transition system.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/danemajstorcev/decision-simulator",
-    live: "https://decision-simulator-nine.vercel.app/",
-    featured: true,
-    image: decisionImg,
   },
 ];
 
@@ -113,17 +108,6 @@ export default function Projects() {
       <p className="section-label">03. projects</p>
       <h2 className="section-title">Things I've Built</h2>
       <div className="section-divider" />
-
-      {/* <p className="projects-note">
-        ⟡ Replace placeholder data with your real repos — check GitHub username{" "}
-        <a
-          href="https://github.com/danemajstorcev"
-          target="_blank"
-          rel="noreferrer"
-        >
-          @danemajstorcev
-        </a>
-      </p> */}
 
       <div className="projects-grid">
         {projects.map((p) => (
