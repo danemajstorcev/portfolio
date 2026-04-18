@@ -1,21 +1,9 @@
+
 .projects-section {
   border-top: 1px solid var(--border);
 }
 
-.projects-note {
-  font-size: 0.72rem;
-  color: var(--text-dim);
-  margin-bottom: 2.5rem;
-  padding: 0.7rem 1rem;
-  background: rgba(255, 107, 53, 0.05);
-  border: 1px solid rgba(255, 107, 53, 0.15);
-  border-radius: var(--radius);
-}
-.projects-note a {
-  color: var(--orange);
-  text-decoration: underline;
-}
-
+/* ── Grid ── */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -23,6 +11,7 @@
   margin-bottom: 3rem;
 }
 
+/* ── Card ── */
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -37,6 +26,7 @@
   position: relative;
 }
 
+/* Top accent line */
 .project-card::before {
   content: "";
   position: absolute;
@@ -53,7 +43,7 @@
 .project-card:hover {
   border-color: var(--border-h);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4);
 }
 
 .project-card:hover::before {
@@ -64,41 +54,100 @@
   border-color: rgba(0, 229, 255, 0.2);
 }
 .project-card--featured::before {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
+/* ── Image container ── */
 .project-image-container {
   position: relative;
   width: 100%;
-  height: 200px;
-  overflow: hidden;
+  aspect-ratio: 16 / 9;  /* consistent ratio on all cards */
+  overflow: hidden;       /* clips the scale — nothing bleeds out */
   background: var(--bg3);
+  flex-shrink: 0;
 }
 
 .project-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  object-position: top center;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center center;
 }
 
+/* Scale is clipped cleanly by overflow:hidden on the container */
 .project-card:hover .project-image {
-  transform: scale(1.08);
+  transform: scale(1.07);
 }
 
+/* ── Hover overlay — fades in over image ── */
 .project-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 229, 255, 0.1) 0%,
-    rgba(13, 255, 140, 0.05) 100%
-  );
-  pointer-events: none;
+  background: rgba(3, 5, 14, 0.72);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 2;
 }
 
+.project-card:hover .project-image-overlay {
+  opacity: 1;
+}
+
+/* Overlay action buttons */
+.overlay-actions {
+  display: flex;
+  gap: 0.75rem;
+  /* slight lift so they feel tangible */
+  transform: translateY(8px);
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .overlay-actions {
+  transform: translateY(0);
+}
+
+.overlay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text);
+  background: rgba(10, 16, 32, 0.7);
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.overlay-btn:hover {
+  background: var(--cyan-dim);
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.overlay-btn--live:hover {
+  background: var(--green-glow);
+  border-color: var(--green);
+  color: var(--green);
+}
+
+/* ── Card content ── */
 .project-content {
-  padding: 1.8rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -134,16 +183,17 @@
 }
 
 .project-folder {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
 }
 
 .project-title {
   font-family: var(--font-head);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text);
   transition: color var(--transition);
+  line-height: 1.3;
 }
 .project-card:hover .project-title {
   color: var(--cyan);
@@ -160,7 +210,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .project-tag {
@@ -172,12 +222,31 @@
   letter-spacing: 0.05em;
 }
 
+/* ── CTA ── */
 .projects-cta {
   text-align: center;
 }
 
+/* ── Tablet (≤900px) ── */
+@media (max-width: 900px) {
+  .projects-grid {
+    gap: 1.2rem;
+  }
+}
+
+/* ── Mobile (≤700px) ── */
 @media (max-width: 700px) {
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project-content {
+    padding: 1.2rem;
+  }
+  .project-title {
+    font-size: 1rem;
+  }
+  .project-desc {
+    font-size: 0.76rem;
   }
 }
