@@ -68,9 +68,6 @@ export default function Footer() {
           <p className="footer-copy">
             © {year} Dane Majstorchev. Designed &amp; built with React.
           </p>
-          <p className="footer-heart">
-            Made with <span>♥</span> in Macedonia
-          </p>
         </div>
       </div>
     </footer>

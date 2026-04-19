@@ -109,8 +109,7 @@ export default function Hero() {
               <span className="prop">role</span>:{" "}
               <span className="str">"Front-End Dev"</span>,{"\n"}
               {"  "}
-              <span className="prop">location</span>:{" "}
-              <span className="str">"Macedonia"</span>,{"\n"}
+            
               {"  "}
               <span className="prop">stack</span>: [{"\n"}
               {"    "}
