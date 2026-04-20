@@ -6,6 +6,7 @@ import dispatchJobsImg from "../img/dispatchJobs.png";
 import CinemalixImg from "../img/cinemalix.png";
 import corevantaLogisticsImg from "../img/corevantaLogo.png";
 import smartPhoneStoreImg from "../img/smartphoneStore.png";
+import lcmsImg from "../img/lcms.png";
 import "../styles/Projects.css";
 
 interface Project {
@@ -99,6 +100,16 @@ const projects: Project[] = [
     live: "https://smartphone-shop-phi.vercel.app/",
     featured: true,
     image: smartPhoneStoreImg,
+  },
+  {
+    num: "09",
+    title: "LCMS — Load & Carrier Management System",
+    desc: "Full-featured logistics dispatch management system built for freight dispatchers and brokers. It provides a centralized dashboard to manage loads, carriers, drivers, brokers, and invoices — all in one place. The app features a Kanban-style dispatch board for live load tracking, a full analytics and reporting suite with charts, an invoice workflow with Draft → Send → Paid progression, and a complete CRUD system across all entities.",
+    tags: ["React", "TypeScript", "Vite", "CSS Custom Properties", "Recharts", "MySQL", "Express + mysql"],
+    github: "https://github.com/danemajstorcev/lcms",
+    live: "https://lcms-seven.vercel.app/",
+    featured: true,
+    image: lcmsImg,
   },
 ];
 
