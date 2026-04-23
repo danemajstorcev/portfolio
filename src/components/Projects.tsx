@@ -7,6 +7,7 @@ import CinemalixImg from "../img/cinemalix.png";
 import corevantaLogisticsImg from "../img/corevantaLogo.png";
 import smartPhoneStoreImg from "../img/smartphoneStore.png";
 import lcmsImg from "../img/lcms.png";
+import qhseImg from "../img/qhse.png";
 import "../styles/Projects.css";
 
 interface Project {
@@ -105,11 +106,29 @@ const projects: Project[] = [
     num: "09",
     title: "LCMS — Load & Carrier Management System",
     desc: "Full-featured logistics dispatch management system built for freight dispatchers and brokers. It provides a centralized dashboard to manage loads, carriers, drivers, brokers, and invoices — all in one place. The app features a Kanban-style dispatch board for live load tracking, a full analytics and reporting suite with charts, an invoice workflow with Draft → Send → Paid progression, and a complete CRUD system across all entities.",
-    tags: ["React", "TypeScript", "Vite", "CSS Custom Properties", "Recharts", "MySQL", "Express + mysql"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "CSS Custom Properties",
+      "Recharts",
+      "MySQL",
+      "Express + mysql",
+    ],
     github: "https://github.com/danemajstorcev/lcms",
     live: "https://lcms-seven.vercel.app/",
     featured: true,
     image: lcmsImg,
+  },
+  {
+    num: "10",
+    title: "QHSE Management Platform — ISO Suite",
+    desc: "QHSE Management Platform is an integrated management system dashboard designed around real-world ISO standards — ISO 9001, ISO 14001, ISO 45001, and ISO 27001. The platform simulates a full enterprise-level QHSE system, enabling organizations to manage risks, incidents, audits, compliance, and environmental performance through a centralized, interactive dashboard.",
+    tags: ["React", "TypeScript", "Vite", "Recharts", "Mammoth"],
+    github: "https://github.com/danemajstorcev/qhse-platform",
+    live: "https://qhse-platform-chi.vercel.app/",
+    featured: true,
+    image: qhseImg,
   },
 ];
 
