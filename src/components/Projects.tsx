@@ -8,6 +8,7 @@ import corevantaLogisticsImg from "../img/corevantaLogo.png";
 import smartPhoneStoreImg from "../img/smartphoneStore.png";
 import lcmsImg from "../img/lcms.png";
 import qhseImg from "../img/qhse.png";
+import taskflowImg from "../img/taskflow.png";
 import "../styles/Projects.css";
 
 interface Project {
@@ -129,6 +130,16 @@ const projects: Project[] = [
     live: "https://qhse-platform-chi.vercel.app/",
     featured: true,
     image: qhseImg,
+  },
+  {
+    num: "11",
+    title: "TaskFlow — Enterprise Task & Workflow Management System",
+    desc: "TaskFlow is a full-featured enterprise workflow management system built for teams that need structured task tracking, role-based access control, and document handling in one place. It simulates a real company environment where admins, managers, and team members collaborate across projects with different levels of permission.",
+    tags: ["React", "TypeScript", "Vite", "Redux Toolkit", "Tailwind CSS", "xlsx (Excel export)","docx (Word export)","jsPDF (PDF export)" ],
+    github: "https://github.com/danemajstorcev/taskflow",
+    live: "https://taskflow-two-tawny.vercel.app/",
+    featured: true,
+    image: taskflowImg,
   },
 ];
 
